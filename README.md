@@ -36,5 +36,7 @@ All the code is shared under the [CC-BY-SA 4.0 License](https://creativecommons.
 
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
+# Reproduce the analysis
+
 More detailed instructions on how to reproduce the analyses are available in the [Wiki](https://github.com/ReLandProject/MosulDrownedLandscapes/wiki).
 
