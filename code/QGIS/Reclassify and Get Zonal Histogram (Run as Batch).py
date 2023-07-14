@@ -35,7 +35,7 @@ class ReclassifyAndGetZonalHistogramRunAsBatch(QgsProcessingAlgorithm):
             'INPUT_RASTER': parameters['RastertoReclassify'],
             'NODATA_FOR_MISSING': False,
             'NO_DATA': -9999,
-            'RANGE_BOUNDARIES': 0,  # min < valore <= max
+            'RANGE_BOUNDARIES': 0,  # min < value <= max
             'RASTER_BAND': 1,
             'TABLE': ['-1','0','0','0','1','1'],
             'OUTPUT': QgsProcessing.TEMPORARY_OUTPUT
@@ -91,8 +91,7 @@ p, li { white-space: pre-wrap; }
 <p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">MacOS</p>
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">'Users/username/YOUR/PROJECT/DIRECTORY/output/shp/annual/' ||  substr(@inputsitespolygon, 1,4) || '_' || substr(@RastertoReclassify, 11, 11) || '.shp'</p></body></html></p>
-<h2>Parametri in ingresso
-</h2>
+<h2>Input parameters</h2>
 <h3>Raster to Reclassify</h3>
 <p>MAKE SURE TO LOAD THE RASTERS INTO THE PROJECT FOR THE MODEL TO WORK AS INTENDED
 The raster parameter, as used in this model, is an NDWI image with values between -1 to 1. 
@@ -102,16 +101,20 @@ The rasters will of course need to cover the area of the sites we want to analys
 <p>The Input Sites Polygon parameter, as used in this model, is a shapefile containing a series of polygons representing the extension of an archaeological site. 
 I would suggest to use one shapefile at the time when running the model in batch process. 
 However, more than one shapefile can be selected in the batch interface, just be careful to used it coupled with the correct rasters.</p>
-<h2>Risultati</h2>
+<h2>Outputs</h2>
 <h3>Polygons Zonal Histogram</h3>
 <p>The algorithm outputs a polygon shapefile with the columns of the original shp, and two more columns from the zonal histogram algorithm.
-The filles will be named with the name of the area (had, mos,  ham) and the year or month, subset from the raster name ((load the rasters into the project or the subset will use the entire file path, resulting in wrong names)
-
+The files will be named with the name of the project (MDAS) and the year and month, subset from the raster name (load the rasters into the project or the subset will use the entire file path, resulting in wrong names)
 These two columns will contain the count of each unique pixels values (i.e. two categories) within each polygon features. 
 
 The columns will be named using a subset of the original raster filename (load the rasters into the project or the subset will use the entire file path, resulting in wrong column names).
-The "_0" column will have the count of land pixels, while the "_1" column will have the count of water pixels. </p>
-<br><p align="right">Autore algoritmo: Dr. Andrea Titolo</p><p align="right">Autore della guida: Dr. Andrea Titolo</p><p align="right">Versione algoritmo: 0.1</p></body></html>"""
+The "_0" column will have the count of non-water pixels, while the "_1" column will have the count of water pixels.</p>
+<h2>Examples</h2>
+<p><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;">
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p></body></html></p><br><p align="right">Algorithm author: Dr. Andrea Titolo</p><p align="right">Help author: Dr. Andrea Titolo</p><p align="right">Algorithm version: 0.1</p></body></html>"""
 
     def helpUrl(self):
         return 'https://github.com/andreatitolo/IraqEmergingSites'

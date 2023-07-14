@@ -9,7 +9,7 @@ Inside this repository there are:
   - Mean water level data per chosen months generated from the [Database for Hydrological Time Series of Inland Waters (DAHITI)](https://dahiti.dgfi.tum.de/en/) as CSV.
   - Site types useful for qualitative analyses (no coordinates are present in these files) as CSV.
 - [Code](https://github.com/ReLandProject/MosulDrownedLandscapes/tree/main/code) used to carry out the analyses. In detail:
-  - **Google Earth Engine (GEE) Javascript code**, available in the relative [subfolder](), used to generate monthly composites used in the analysis:  
+  - **Google Earth Engine (GEE) Javascript code**, available in the relative [subfolder](https://github.com/ReLandProject/MosulDrownedLandscapes/tree/main/code/JS), used to generate monthly composites used in the analysis:  
     - A script for generating Landsat images.
     - A second script for generating Sentinel-2 images.
     - These two scripts are also available directly in Google Earth Engine
@@ -21,7 +21,9 @@ Inside this repository there are:
     - 02_image_reclassification.R → a small script to reclassify the NDWI images generated from the previous script.
     - 03_emerged_area_pct.R → script that leverages the {qgisprocess} package and R to extract water and non-water pixels inside polygons representing sites extent (using the zonal histogram output from QGIS). It also gather all the outputs from the algorithm and merge them to create a single shapefile with readable percentages of emerged/submerged surface.
     - 04_quantitative_pct_info.R → script that add some quantitative information to the output of the previous scripts, useful for wider interpretations.
-  - **QGIS processing tools**, in the [QGIS Subfolder]():
+    - 05_dataviz.R → script to generate the figures present in the paper. 
+    - a function folder with a `get_emerged_area.R` script. Here resides some functions that will be called from the other scripts (02, 03, 04).
+  - **QGIS processing tools**, in the [QGIS Subfolder](https://github.com/ReLandProject/MosulDrownedLandscapes/tree/main/code/QGIS):
     - Standalone qgis model as .model3 file
       - This model covers the steps carried out in the 02 and half of the 03 scripts described above
     - Same models as python scripts
@@ -34,5 +36,5 @@ All the code is shared under the [CC-BY-SA 4.0 License](https://creativecommons.
 
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-More detailed instructions on how to reproduce the analyses are available in the [Wiki]() (WIP).
+More detailed instructions on how to reproduce the analyses are available in the [Wiki](https://github.com/ReLandProject/MosulDrownedLandscapes/wiki).
 
