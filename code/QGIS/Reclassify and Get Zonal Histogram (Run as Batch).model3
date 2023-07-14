@@ -1,72 +1,72 @@
 <!DOCTYPE model>
 <Option type="Map">
-  <Option name="children" type="Map">
-    <Option name="native:reclassifybytable_1" type="Map">
-      <Option value="true" name="active" type="bool"/>
+  <Option type="Map" name="children">
+    <Option type="Map" name="native:reclassifybytable_1">
+      <Option value="true" type="bool" name="active"/>
       <Option name="alg_config"/>
-      <Option value="native:reclassifybytable" name="alg_id" type="QString"/>
-      <Option value="" name="color" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="30" name="component_height" type="double"/>
-        <Option value="478" name="component_pos_x" type="double"/>
-        <Option value="235.2" name="component_pos_y" type="double"/>
-        <Option value="200" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option value="native:reclassifybytable" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="30" type="double" name="component_height"/>
+        <Option value="478" type="double" name="component_pos_x"/>
+        <Option value="235.2" type="double" name="component_pos_y"/>
+        <Option value="200" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
       </Option>
-      <Option value="Reclassify with table" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="278" name="component_pos_x" type="double"/>
-      <Option value="280.2" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
+      <Option value="Reclassify with table" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="278" type="double" name="component_pos_x"/>
+      <Option value="280.2" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
       <Option name="dependencies"/>
-      <Option value="native:reclassifybytable_1" name="id" type="QString"/>
+      <Option value="native:reclassifybytable_1" type="QString" name="id"/>
       <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="DATA_TYPE" type="List">
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="DATA_TYPE">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="5" name="static_value" type="int"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="5" type="int" name="static_value"/>
           </Option>
         </Option>
-        <Option name="INPUT_RASTER" type="List">
+        <Option type="List" name="INPUT_RASTER">
           <Option type="Map">
-            <Option value="RastertoReclassify" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option value="RastertoReclassify" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
           </Option>
         </Option>
-        <Option name="NODATA_FOR_MISSING" type="List">
+        <Option type="List" name="NODATA_FOR_MISSING">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="false" name="static_value" type="bool"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
           </Option>
         </Option>
-        <Option name="NO_DATA" type="List">
+        <Option type="List" name="NO_DATA">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="-9999" name="static_value" type="double"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="-9999" type="double" name="static_value"/>
           </Option>
         </Option>
-        <Option name="RANGE_BOUNDARIES" type="List">
+        <Option type="List" name="RANGE_BOUNDARIES">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="0" name="static_value" type="int"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
           </Option>
         </Option>
-        <Option name="RASTER_BAND" type="List">
+        <Option type="List" name="RASTER_BAND">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="1" name="static_value" type="QString"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="QString" name="static_value"/>
           </Option>
         </Option>
-        <Option name="TABLE" type="List">
+        <Option type="List" name="TABLE">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option name="static_value" type="List">
+            <Option value="2" type="int" name="source"/>
+            <Option type="List" name="static_value">
               <Option value="-1" type="QString"/>
               <Option value="0" type="QString"/>
               <Option value="0" type="QString"/>
@@ -78,207 +78,194 @@
         </Option>
       </Option>
     </Option>
-    <Option name="native:zonalhistogram_1" type="Map">
-      <Option value="true" name="active" type="bool"/>
+    <Option type="Map" name="native:zonalhistogram_1">
+      <Option value="true" type="bool" name="active"/>
       <Option name="alg_config"/>
-      <Option value="native:zonalhistogram" name="alg_id" type="QString"/>
-      <Option value="" name="color" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="30" name="component_height" type="double"/>
-        <Option value="772.6000000000001" name="component_pos_x" type="double"/>
-        <Option value="337.99999999999983" name="component_pos_y" type="double"/>
-        <Option value="200" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option value="native:zonalhistogram" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="30" type="double" name="component_height"/>
+        <Option value="0" type="double" name="component_pos_x"/>
+        <Option value="0" type="double" name="component_pos_y"/>
+        <Option value="200" type="double" name="component_width"/>
+        <Option value="false" type="bool" name="outputs_collapsed"/>
+        <Option value="false" type="bool" name="parameters_collapsed"/>
       </Option>
-      <Option value="Zonal Histogram" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="572.6000000000001" name="component_pos_x" type="double"/>
-      <Option value="382.99999999999983" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
+      <Option value="Zonal Histogram" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="572.6000000000001" type="double" name="component_pos_x"/>
+      <Option value="382.99999999999983" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
       <Option name="dependencies"/>
-      <Option value="native:zonalhistogram_1" name="id" type="QString"/>
-      <Option name="outputs" type="Map">
-        <Option name="Polygons Zonal Histogram" type="Map">
-          <Option value="native:zonalhistogram_1" name="child_id" type="QString"/>
-          <Option value="" name="color" type="QString"/>
-          <Option name="comment" type="Map">
-            <Option value="" name="color" type="QString"/>
-            <Option value="" name="component_description" type="QString"/>
-            <Option value="30" name="component_height" type="double"/>
-            <Option value="0" name="component_pos_x" type="double"/>
-            <Option value="0" name="component_pos_y" type="double"/>
-            <Option value="200" name="component_width" type="double"/>
-            <Option value="false" name="outputs_collapsed" type="bool"/>
-            <Option value="false" name="parameters_collapsed" type="bool"/>
+      <Option value="native:zonalhistogram_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Polygons Zonal Histogram">
+          <Option value="native:zonalhistogram_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="color"/>
+          <Option type="Map" name="comment">
+            <Option value="" type="QString" name="color"/>
+            <Option value="" type="QString" name="component_description"/>
+            <Option value="30" type="double" name="component_height"/>
+            <Option value="0" type="double" name="component_pos_x"/>
+            <Option value="0" type="double" name="component_pos_y"/>
+            <Option value="200" type="double" name="component_width"/>
+            <Option value="false" type="bool" name="outputs_collapsed"/>
+            <Option value="false" type="bool" name="parameters_collapsed"/>
           </Option>
-          <Option value="Polygons Zonal Histogram" name="component_description" type="QString"/>
-          <Option value="30" name="component_height" type="double"/>
-          <Option value="811.8000000000002" name="component_pos_x" type="double"/>
-          <Option value="470.3999999999999" name="component_pos_y" type="double"/>
-          <Option value="200" name="component_width" type="double"/>
-          <Option name="default_value" type="invalid"/>
-          <Option value="false" name="mandatory" type="bool"/>
-          <Option value="Polygons Zonal Histogram" name="name" type="QString"/>
-          <Option value="OUTPUT" name="output_name" type="QString"/>
-          <Option value="false" name="outputs_collapsed" type="bool"/>
-          <Option value="false" name="parameters_collapsed" type="bool"/>
+          <Option value="Polygons Zonal Histogram" type="QString" name="component_description"/>
+          <Option value="30" type="double" name="component_height"/>
+          <Option value="811.8000000000002" type="double" name="component_pos_x"/>
+          <Option value="470.3999999999999" type="double" name="component_pos_y"/>
+          <Option value="200" type="double" name="component_width"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="Polygons Zonal Histogram" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+          <Option value="false" type="bool" name="outputs_collapsed"/>
+          <Option value="false" type="bool" name="parameters_collapsed"/>
         </Option>
       </Option>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="COLUMN_PREFIX" type="List">
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="COLUMN_PREFIX">
           <Option type="Map">
-            <Option value="substr( parameter('RastertoReclassify'), 11, 8)" name="expression" type="QString"/>
-            <Option value="3" name="source" type="int"/>
+            <Option value="substr( parameter('RastertoReclassify'), 10, 8)" type="QString" name="expression"/>
+            <Option value="3" type="int" name="source"/>
           </Option>
         </Option>
-        <Option name="INPUT_RASTER" type="List">
+        <Option type="List" name="INPUT_RASTER">
           <Option type="Map">
-            <Option value="native:reclassifybytable_1" name="child_id" type="QString"/>
-            <Option value="OUTPUT" name="output_name" type="QString"/>
-            <Option value="1" name="source" type="int"/>
+            <Option value="native:reclassifybytable_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
           </Option>
         </Option>
-        <Option name="INPUT_VECTOR" type="List">
+        <Option type="List" name="INPUT_VECTOR">
           <Option type="Map">
-            <Option value="inputsitespolygon" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option value="inputsitespolygon" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
           </Option>
         </Option>
-        <Option name="RASTER_BAND" type="List">
+        <Option type="List" name="RASTER_BAND">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="1" name="static_value" type="QString"/>
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="QString" name="static_value"/>
           </Option>
-        </Option>
-      </Option>
-    </Option>
-  </Option>
-  <Option name="designerParameterValues" type="Map">
-    <Option value="MDAS_NDWI_1995_07_max_L5_5062e6f7_1098_426a_a3a2_b9b305bee6f6" name="RastertoReclassify" type="QString"/>
-    <Option value="MDAS_polys_ce6f7400_9fdb_4ed1_941f_bd170bc03ad4" name="inputsitespolygon" type="QString"/>
-    <Option name="native:zonalhistogram_1:Polygons Zonal Histogram" type="QgsProcessingOutputLayerDefinition">
-      <Option type="Map">
-        <Option name="create_options" type="Map">
-          <Option value="System" name="fileEncoding" type="QString"/>
-        </Option>
-        <Option name="sink" type="Map">
-          <Option value="true" name="active" type="bool"/>
-          <Option value="1" name="type" type="int"/>
-          <Option value="/Users/andreatitolo/gitGithub/MosulDrownedLandscapes/output/annual/test.shp" name="val" type="QString"/>
         </Option>
       </Option>
     </Option>
   </Option>
+  <Option name="designerParameterValues"/>
   <Option name="groupBoxes"/>
-  <Option name="help" type="Map">
-    <Option value="Dr. Andrea Titolo" name="ALG_CREATOR" type="QString"/>
-    <Option value="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-weight:600; text-decoration: underline;&quot;>RUN THIS MODEL AS BATCH PROCESS&lt;/span>&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; text-decoration: underline;&quot;>MAKE SURE TO LOAD THE RASTERS INTO THE PROJECT FOR THE MODEL TO WORK AS INTENDED&lt;/span>&lt;/p>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; text-decoration: underline;&quot;>&lt;br />&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>This algorithm reclassify a series of rasters with a 2x3 table, and then count each unique reclassified value within different polygons in a shapefile, using the zonal histogram algorithm.&lt;/p>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>The model takes two input paramaters: a raster image, and a polygon shapefile. &lt;/p>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>It outputs a shapefile with two columns appended, named with the year of the input raster filename.&lt;/p>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>When selecting the output name, chose the &amp;quot;calculate by expression&amp;quot; option and insert the following to programmatically name the output of the model:&lt;/p>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Windows&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>'C:/YOUR/PROJECT/DIRECTORY/output/shp/zonal_histogram_output/' || &lt;span style=&quot; font-family:'Helvetica Neue';&quot;>substr(@RastertoReclassify, 11,11) &lt;/span> || '.shp'&lt;/p>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>MacOS&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>'Users/YourUsername/YOUR/PROJECT/DIRECTORY/output/shp/zonal_histogram_output/' || &lt;span style=&quot; font-family:'Helvetica Neue';&quot;>substr(@RastertoReclassify, 11,11) &lt;/span> || '.shp'&lt;/p>&lt;/body>&lt;/html>" name="ALG_DESC" type="QString"/>
-    <Option value="Dr. Andrea Titolo" name="ALG_HELP_CREATOR" type="QString"/>
-    <Option value="0.1" name="ALG_VERSION" type="QString"/>
-    <Option value="https://github.com/andreatitolo/IraqEmergingSites" name="HELP_URL" type="QString"/>
-    <Option value="MAKE SURE TO LOAD THE RASTERS INTO THE PROJECT FOR THE MODEL TO WORK AS INTENDED&#xa;The raster parameter, as used in this model, is an NDWI image with values between -1 to 1. &#xa;When running this model as a batch process, a series of rasters can be selected.&#xa;The rasters will of course need to cover the area of the sites we want to analyse, otherwise the result will be a series of NULL values. " name="RastertoReclassify" type="QString"/>
-    <Option value="Reclassify rasters and calculate zonal histogram within a polygon shapefile. " name="SHORT_DESCRIPTION" type="QString"/>
-    <Option value="This expression is an optional parameter used by the &quot;Column Prefix&quot; parameter of the Zonal Hisogram algorithm. &#xa;It return a subset of the input raster filename, adding also a &quot;_&quot; after that." name="columnsprefix" type="QString"/>
-    <Option value="The Input Sites Polygon parameter, as used in this model, is a shapefile containing a series of polygons representing the extension of an archaeological site. &#xa;I would suggest to use one shapefile at the time when running the model in batch process. &#xa;However, more than one shapefile can be selected in the batch interface, just be careful to used it coupled with the correct rasters." name="inputsitespolygon" type="QString"/>
-    <Option value="The output is a polygon shapefile with the  columns of the original shp, and two more columns generated by the zonal histogram.&#xa;These two columns will have the count of each unique pixel value (i.e. two categories), contained in each polygon feature." name="native:zonalhistogram_1:Polygons Zonal Hist. " type="QString"/>
-    <Option value="The algorithm outputs a polygon shapefile with the columns of the original shp, and two more columns from the zonal histogram algorithm.&#xa;The filles will be named with the name of the area (had, mos,  ham) and the year or month, subset from the raster name ((load the rasters into the project or the subset will use the entire file path, resulting in wrong names)&#xa;&#xa;These two columns will contain the count of each unique pixels values (i.e. two categories) within each polygon features. &#xa;&#xa;The columns will be named using a subset of the original raster filename (load the rasters into the project or the subset will use the entire file path, resulting in wrong column names).&#xa;The &quot;_0&quot; column will have the count of land pixels, while the &quot;_1&quot; column will have the count of water pixels. " name="native:zonalhistogram_1:Polygons Zonal Histogram" type="QString"/>
-    <Option value="" name="native:zonalhistogram_1:polys_with_zonal_hist" type="QString"/>
+  <Option type="Map" name="help">
+    <Option value="Dr. Andrea Titolo" type="QString" name="ALG_CREATOR"/>
+    <Option value="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>RUN THIS MODEL AS BATCH PROCESS&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>MAKE SURE TO LOAD THE RASTERS INTO THE PROJECT FOR THE MODEL TO WORK AS INTENDED&lt;/p>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>This algorithm reclassify a series of rasters with a 2x3 table, and then count each unique reclassified value within different polygons in a shapefile, using the zonal histogram algorithm.&lt;/p>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>The model takes two input paramaters: a raster image, and a polygon shapefile. &lt;/p>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>It outputs a shapefile with two columns appended, named with the year of the input raster filename.&lt;/p>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>When selecting the output name, chose the &amp;quot;calculate by expression&amp;quot; option and insert the following to programmatically name the output of the model:&lt;/p>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Windows&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>'C:/YOUR/PROJECT/DIRECTORY/output/shp/annual/' ||  substr(@inputsitespolygon, 1,4) || '_' || substr(@RastertoReclassify, 11, 11) || '.shp'&lt;/p>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>MacOS&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>'Users/username/YOUR/PROJECT/DIRECTORY/output/shp/annual/' ||  substr(@inputsitespolygon, 1,4) || '_' || substr(@RastertoReclassify, 11, 11) || '.shp'&lt;/p>&lt;/body>&lt;/html>" type="QString" name="ALG_DESC"/>
+    <Option value="Dr. Andrea Titolo" type="QString" name="ALG_HELP_CREATOR"/>
+    <Option value="0.1" type="QString" name="ALG_VERSION"/>
+    <Option value="https://github.com/andreatitolo/IraqEmergingSites" type="QString" name="HELP_URL"/>
+    <Option value="MAKE SURE TO LOAD THE RASTERS INTO THE PROJECT FOR THE MODEL TO WORK AS INTENDED&#xa;The raster parameter, as used in this model, is an NDWI image with values between -1 to 1. &#xa;When running this model as a batch process, a series of rasters can be selected.&#xa;The rasters will of course need to cover the area of the sites we want to analyse, otherwise the result will be a series of NULL values. " type="QString" name="RastertoReclassify"/>
+    <Option value="Reclassify rasters and calculate zonal histogram within a polygon shapefile. " type="QString" name="SHORT_DESCRIPTION"/>
+    <Option value="This expression is an optional parameter used by the &quot;Column Prefix&quot; parameter of the Zonal Hisogram algorithm. &#xa;It return a subset of the input raster filename, adding also a &quot;_&quot; after that." type="QString" name="columnsprefix"/>
+    <Option value="The Input Sites Polygon parameter, as used in this model, is a shapefile containing a series of polygons representing the extension of an archaeological site. &#xa;I would suggest to use one shapefile at the time when running the model in batch process. &#xa;However, more than one shapefile can be selected in the batch interface, just be careful to used it coupled with the correct rasters." type="QString" name="inputsitespolygon"/>
+    <Option value="The output is a polygon shapefile with the  columns of the original shp, and two more columns generated by the zonal histogram.&#xa;These two columns will have the count of each unique pixel value (i.e. two categories), contained in each polygon feature." type="QString" name="native:zonalhistogram_1:Polygons Zonal Hist. "/>
+    <Option value="The algorithm outputs a polygon shapefile with the columns of the original shp, and two more columns from the zonal histogram algorithm.&#xa;The filles will be named with the name of the area (had, mos,  ham) and the year or month, subset from the raster name ((load the rasters into the project or the subset will use the entire file path, resulting in wrong names)&#xa;&#xa;These two columns will contain the count of each unique pixels values (i.e. two categories) within each polygon features. &#xa;&#xa;The columns will be named using a subset of the original raster filename (load the rasters into the project or the subset will use the entire file path, resulting in wrong column names).&#xa;The &quot;_0&quot; column will have the count of land pixels, while the &quot;_1&quot; column will have the count of water pixels. " type="QString" name="native:zonalhistogram_1:Polygons Zonal Histogram"/>
+    <Option value="" type="QString" name="native:zonalhistogram_1:polys_with_zonal_hist"/>
   </Option>
-  <Option value="Version1" name="internal_version" type="QString"/>
+  <Option value="Version1" type="QString" name="internal_version"/>
   <Option name="modelVariables"/>
-  <Option value="MosulDrownedLandscapes" name="model_group" type="QString"/>
-  <Option value="Reclassify and Get Zonal Histogram (Run as Batch)" name="model_name" type="QString"/>
-  <Option name="parameterDefinitions" type="Map">
-    <Option name="RastertoReclassify" type="Map">
-      <Option name="default" type="invalid"/>
-      <Option name="defaultGui" type="invalid"/>
-      <Option value="Raster to Reclassify" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option value="MAKE SURE TO LOAD THE RASTERS INTO THE PROJECT FOR THE MODEL TO WORK AS INTENDED&#xa;The raster parameter, as used in this model, is an NDWI image with values between -1 to 1. &#xa;When running this model as a batch process, a series of rasters can be selected.&#xa;The rasters will of course need to cover the area of the sites we want to analyse, otherwise the result will be a series of NULL values. " name="help" type="QString"/>
+  <Option value="MosulDrownedLandscapes" type="QString" name="model_group"/>
+  <Option value="Reclassify and Get Zonal Histogram (Run as Batch)" type="QString" name="model_name"/>
+  <Option value="" type="QString" name="outputGroup"/>
+  <Option name="outputOrder"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="RastertoReclassify">
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Raster to Reclassify" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="MAKE SURE TO LOAD THE RASTERS INTO THE PROJECT FOR THE MODEL TO WORK AS INTENDED&#xa;The raster parameter, as used in this model, is an NDWI image with values between -1 to 1. &#xa;When running this model as a batch process, a series of rasters can be selected.&#xa;The rasters will of course need to cover the area of the sites we want to analyse, otherwise the result will be a series of NULL values. " type="QString" name="help"/>
       <Option name="metadata"/>
-      <Option value="RastertoReclassify" name="name" type="QString"/>
-      <Option value="raster" name="parameter_type" type="QString"/>
+      <Option value="RastertoReclassify" type="QString" name="name"/>
+      <Option value="raster" type="QString" name="parameter_type"/>
     </Option>
-    <Option name="inputsitespolygon" type="Map">
-      <Option name="data_types" type="List">
+    <Option type="Map" name="inputsitespolygon">
+      <Option type="List" name="data_types">
         <Option value="2" type="int"/>
       </Option>
-      <Option name="default" type="invalid"/>
-      <Option name="defaultGui" type="invalid"/>
-      <Option value="Input Sites Polygon" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option value="The Input Sites Polygon parameter, as used in this model, is a shapefile containing a series of polygons representing the extension of an archaeological site. &#xa;I would suggest to use one shapefile at the time when running the model in batch process. &#xa;However, more than one shapefile can be selected in the batch interface, just be careful to used it coupled with the correct rasters." name="help" type="QString"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Input Sites Polygon" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="The Input Sites Polygon parameter, as used in this model, is a shapefile containing a series of polygons representing the extension of an archaeological site. &#xa;I would suggest to use one shapefile at the time when running the model in batch process. &#xa;However, more than one shapefile can be selected in the batch interface, just be careful to used it coupled with the correct rasters." type="QString" name="help"/>
       <Option name="metadata"/>
-      <Option value="inputsitespolygon" name="name" type="QString"/>
-      <Option value="vector" name="parameter_type" type="QString"/>
+      <Option value="inputsitespolygon" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
     </Option>
-    <Option name="native:zonalhistogram_1:Polygons Zonal Histogram" type="Map">
-      <Option value="true" name="create_by_default" type="bool"/>
-      <Option value="2" name="data_type" type="int"/>
-      <Option name="default" type="invalid"/>
-      <Option name="defaultGui" type="invalid"/>
-      <Option value="Polygons Zonal Histogram" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option value="" name="help" type="QString"/>
-      <Option name="metadata" type="Map">
-        <Option value="native:zonalhistogram_1" name="_modelChildId" type="QString"/>
-        <Option value="Polygons Zonal Histogram" name="_modelChildOutputName" type="QString"/>
-        <Option value="native" name="_modelChildProvider" type="QString"/>
+    <Option type="Map" name="native:zonalhistogram_1:Polygons Zonal Histogram">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option value="2" type="int" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="Polygons Zonal Histogram" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option value="native:zonalhistogram_1" type="QString" name="_modelChildId"/>
+        <Option value="Polygons Zonal Histogram" type="QString" name="_modelChildOutputName"/>
+        <Option value="native" type="QString" name="_modelChildProvider"/>
       </Option>
-      <Option value="native:zonalhistogram_1:Polygons Zonal Histogram" name="name" type="QString"/>
-      <Option value="sink" name="parameter_type" type="QString"/>
-      <Option value="false" name="supports_append" type="bool"/>
-      <Option value="true" name="supports_non_file_outputs" type="bool"/>
+      <Option value="native:zonalhistogram_1:Polygons Zonal Histogram" type="QString" name="name"/>
+      <Option value="sink" type="QString" name="parameter_type"/>
+      <Option value="false" type="bool" name="supports_append"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
     </Option>
   </Option>
   <Option name="parameterOrder"/>
-  <Option name="parameters" type="Map">
-    <Option name="RastertoReclassify" type="Map">
-      <Option value="" name="color" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="30" name="component_height" type="double"/>
-        <Option value="0" name="component_pos_x" type="double"/>
-        <Option value="0" name="component_pos_y" type="double"/>
-        <Option value="200" name="component_width" type="double"/>
-        <Option value="false" name="outputs_collapsed" type="bool"/>
-        <Option value="false" name="parameters_collapsed" type="bool"/>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="RastertoReclassify">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="30" type="double" name="component_height"/>
+        <Option value="0" type="double" name="component_pos_x"/>
+        <Option value="0" type="double" name="component_pos_y"/>
+        <Option value="200" type="double" name="component_width"/>
+        <Option value="false" type="bool" name="outputs_collapsed"/>
+        <Option value="false" type="bool" name="parameters_collapsed"/>
       </Option>
-      <Option value="RastertoReclassify" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="119.99999999999997" name="component_pos_x" type="double"/>
-      <Option value="64.39999999999995" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
-      <Option value="RastertoReclassify" name="name" type="QString"/>
-      <Option value="false" name="outputs_collapsed" type="bool"/>
-      <Option value="false" name="parameters_collapsed" type="bool"/>
+      <Option value="RastertoReclassify" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="119.99999999999997" type="double" name="component_pos_x"/>
+      <Option value="64.39999999999995" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="RastertoReclassify" type="QString" name="name"/>
+      <Option value="false" type="bool" name="outputs_collapsed"/>
+      <Option value="false" type="bool" name="parameters_collapsed"/>
     </Option>
-    <Option name="inputsitespolygon" type="Map">
-      <Option value="" name="color" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="30" name="component_height" type="double"/>
-        <Option value="0" name="component_pos_x" type="double"/>
-        <Option value="0" name="component_pos_y" type="double"/>
-        <Option value="200" name="component_width" type="double"/>
-        <Option value="false" name="outputs_collapsed" type="bool"/>
-        <Option value="false" name="parameters_collapsed" type="bool"/>
+    <Option type="Map" name="inputsitespolygon">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="30" type="double" name="component_height"/>
+        <Option value="0" type="double" name="component_pos_x"/>
+        <Option value="0" type="double" name="component_pos_y"/>
+        <Option value="200" type="double" name="component_width"/>
+        <Option value="false" type="bool" name="outputs_collapsed"/>
+        <Option value="false" type="bool" name="parameters_collapsed"/>
       </Option>
-      <Option value="inputsitespolygon" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="386.4" name="component_pos_x" type="double"/>
-      <Option value="73.79999999999984" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
-      <Option value="inputsitespolygon" name="name" type="QString"/>
-      <Option value="false" name="outputs_collapsed" type="bool"/>
-      <Option value="false" name="parameters_collapsed" type="bool"/>
+      <Option value="inputsitespolygon" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="386.4" type="double" name="component_pos_x"/>
+      <Option value="73.79999999999984" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="inputsitespolygon" type="QString" name="name"/>
+      <Option value="false" type="bool" name="outputs_collapsed"/>
+      <Option value="false" type="bool" name="parameters_collapsed"/>
     </Option>
   </Option>
 </Option>

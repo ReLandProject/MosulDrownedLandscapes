@@ -2,7 +2,7 @@
 Model exported as python.
 Name : Reclassify and Get Zonal Histogram (Run as Batch)
 Group : MosulDrownedLandscapes
-With QGIS : 33003
+With QGIS : 33200
 """
 
 from qgis.core import QgsProcessing
@@ -48,7 +48,7 @@ class ReclassifyAndGetZonalHistogramRunAsBatch(QgsProcessingAlgorithm):
 
         # Zonal Histogram
         alg_params = {
-            'COLUMN_PREFIX': QgsExpression("substr( parameter('RastertoReclassify'), 11, 8)").evaluate(),
+            'COLUMN_PREFIX': QgsExpression("substr( parameter('RastertoReclassify'), 10, 8)").evaluate(),
             'INPUT_RASTER': outputs['ReclassifyWithTable']['OUTPUT'],
             'INPUT_VECTOR': parameters['inputsitespolygon'],
             'RASTER_BAND': 1,
@@ -75,9 +75,9 @@ class ReclassifyAndGetZonalHistogramRunAsBatch(QgsProcessingAlgorithm):
 <html><head><meta name="qrichtext" content="1" /><style type="text/css">
 p, li { white-space: pre-wrap; }
 </style></head><body style=" font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;">
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600; text-decoration: underline;">RUN THIS MODEL AS BATCH PROCESS</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" text-decoration: underline;">MAKE SURE TO LOAD THE RASTERS INTO THE PROJECT FOR THE MODEL TO WORK AS INTENDED</span></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; text-decoration: underline;"><br /></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">RUN THIS MODEL AS BATCH PROCESS</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">MAKE SURE TO LOAD THE RASTERS INTO THE PROJECT FOR THE MODEL TO WORK AS INTENDED</p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">This algorithm reclassify a series of rasters with a 2x3 table, and then count each unique reclassified value within different polygons in a shapefile, using the zonal histogram algorithm.</p>
 <p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">The model takes two input paramaters: a raster image, and a polygon shapefile. </p>
@@ -87,10 +87,10 @@ p, li { white-space: pre-wrap; }
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">When selecting the output name, chose the &quot;calculate by expression&quot; option and insert the following to programmatically name the output of the model:</p>
 <p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Windows</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">'C:/YOUR/PROJECT/DIRECTORY/output/shp/zonal_histogram_output/' || <span style=" font-family:'Helvetica Neue';">substr(@RastertoReclassify, 11,11) </span> || '.shp'</p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">'C:/YOUR/PROJECT/DIRECTORY/output/shp/annual/' ||  substr(@inputsitespolygon, 1,4) || '_' || substr(@RastertoReclassify, 11, 11) || '.shp'</p>
 <p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
 <p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">MacOS</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">'Users/YourUsername/YOUR/PROJECT/DIRECTORY/output/shp/zonal_histogram_output/' || <span style=" font-family:'Helvetica Neue';">substr(@RastertoReclassify, 11,11) </span> || '.shp'</p></body></html></p>
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">'Users/username/YOUR/PROJECT/DIRECTORY/output/shp/annual/' ||  substr(@inputsitespolygon, 1,4) || '_' || substr(@RastertoReclassify, 11, 11) || '.shp'</p></body></html></p>
 <h2>Parametri in ingresso
 </h2>
 <h3>Raster to Reclassify</h3>
