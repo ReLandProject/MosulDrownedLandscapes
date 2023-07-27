@@ -17,18 +17,19 @@ Inside this repository there are:
       - [Link for Sentinel script](https://code.earthengine.google.com/8117aa446748b197d616273d79d6e8bc?noload=true)
   - **R code** divided in five main scripts and one functions script, used to run the analysis, available in the [Script Subfolder](https://github.com/andreatitolo/IraqEmerginSites/tree/master/code/R).
     - The scripts are named in the order they are supposed to be run:
-    - 01_rgee_image_collections.R → an adaptation of the Google Earth Engine scripts in R, thanks to the [{rgee}](https://github.com/r-spatial/rgee) package.
-    - 02_image_reclassification.R → a small script to reclassify the NDWI images generated from the previous script.
-    - 03_emerged_area_pct.R → script that leverages the {qgisprocess} package and R to extract water and non-water pixels inside polygons representing sites extent (using the zonal histogram output from QGIS). It also gather all the outputs from the algorithm and merge them to create a single shapefile with readable percentages of emerged/submerged surface.
-    - 04_quantitative_pct_info.R → script that add some quantitative information to the output of the previous scripts, useful for wider interpretations.
-    - 05_dataviz.R → script to generate the figures present in the paper. 
+    - `01_rgee_image_collections.R` → an adaptation of the Google Earth Engine scripts in R, thanks to the [{rgee}](https://github.com/r-spatial/rgee) package.
+    - `02_image_reclassification.R` → a small script to reclassify the NDWI images generated from the previous script.
+    - `03_emerged_area_pct.R` → script that leverages the {qgisprocess} package and R to extract water and non-water pixels inside polygons representing sites extent (using the zonal histogram output from QGIS). It also gather all the outputs from the algorithm and merge them to create a single shapefile with readable percentages of emerged/submerged surface.
+    - `04_quantitative_pct_info.R` → script that add some quantitative information to the output of the previous scripts, useful for wider interpretations.
+    - `05_dataviz.R` → script to generate the figures present in the paper. 
     - a function folder with a `get_emerged_area.R` script. Here resides some functions that will be called from the other scripts (02, 03, 04).
   - **QGIS processing tools**, in the [QGIS Subfolder](https://github.com/ReLandProject/MosulDrownedLandscapes/tree/main/code/QGIS):
     - Standalone qgis model as .model3 file
       - This model covers the steps carried out in the 02 and half of the 03 scripts described above
     - Same models as python scripts
 - **Accuracy assessment data** used for the error matrix mentioned in the paper (available on [figshare](https://figshare.com/s/43606b0a2cf48e8e0df4) because of data size).
-- The present repository is also archived on zenodo at: 
+- The present repository is also archived on zenodo at: [![DOI](https://zenodo.org/badge/660115267.svg)](https://zenodo.org/badge/latestdoi/660115267)
+
   
 # License 
 
